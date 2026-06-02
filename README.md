@@ -13,8 +13,8 @@ The SVG updates automatically on push via the [Draw Keymap](.github/workflows/dr
 
 ## Display
 
-- **Left (central):** Built-in ZMK status screen (layer, battery, BT)
-- **Right (peripheral):** Custom P keycap logo with glitch effects + battery + BT status
+- **Left (central):** Built-in ZMK status screen (layer, battery %, BT/output)
+- **Right (peripheral):** Custom OLED — split link, Bongo Cat, battery %
 
 ## Interactive Viewer
 
@@ -39,7 +39,7 @@ make svg       # parse + render SVG
 
 - **Board:** Nice!Nano v2 (nRF52840)
 - **Shield:** Corne (split, 6x3+3)
-- **Display:** OLED SSD1306 128x32 / Nice!View
+- **Display:** OLED SSD1306 128×32 (ZMK pinned to SamIAm2000/zmk for Bongo Cat widget)
 - **RGB:** 27 WS2812 LEDs
 - **Bluetooth:** 4 profiles
 - **ZMK Studio:** Enabled

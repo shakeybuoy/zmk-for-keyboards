@@ -45,4 +45,13 @@ endif
 config CORNE_CUSTOM_DISPLAY
 	bool "Custom Corne display"
 	depends on ZMK_DISPLAY
+	select LVGL_USE_IMG
+	select LVGL_USE_ANIMATION
+
+if CORNE_CUSTOM_DISPLAY
+
+config LV_Z_MEM_POOL_SIZE
+	default 8192
+
+endif
 
