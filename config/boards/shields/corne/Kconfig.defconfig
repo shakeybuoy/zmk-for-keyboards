@@ -21,6 +21,16 @@ config I2C
 config SSD1306
 	default y
 
+config LV_USE_ANIMATION
+	bool
+	default y
+
+config ZMK_WIDGET_BONGO_CAT
+	bool
+	default y
+	select LV_USE_IMG
+	select LV_USE_ANIMATION
+
 endif # ZMK_DISPLAY
 
 if LVGL
